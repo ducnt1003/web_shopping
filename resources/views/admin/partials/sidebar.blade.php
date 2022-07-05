@@ -95,7 +95,7 @@
                 <!-- end product-->
 
                 <!-- banner-->
-                <li class="nav-item">
+                {{-- <li class="nav-item">
                     <a href="#" class="nav-link">
                         <i class="fas fa-image" style="margin-left:4px"></i>
                         <p style="margin-left:5px">
@@ -291,7 +291,7 @@
                             </a>
                         </li>
                     </ul>
-                </li>
+                </li> --}}
                 <li class="nav-item">
                     <a href="#" class="nav-link">
                         <i class="fas fa-cart-plus"></i>

@@ -21,7 +21,7 @@
                             <div class='carousel-inner '>
                                 <div class='item active'>
                                     <a href="{{$product->photo}}" target="_blank">
-                                        <img src='{{$product->photo}}' alt='' data-zoom-image="{{$product->name}}" />
+                                        <img src='/template/web/images//shop/single-products/product-1.jpg'  alt='' data-zoom-image="{{$product->name}}" />
                                     </a>
                                 </div>
                                 <div class='item'>
@@ -55,7 +55,7 @@
                         <!-- thumb -->
                         <ol class='carousel-indicators mCustomScrollbar meartlab'>
                             <li data-target='#carousel-custom' data-slide-to='0' class='active'>
-                                <img src='{{$product->photo}}' alt='{{$product->name}}' />
+                                <img src='/template/web/images//shop/single-products/product-1.jpg' alt='{{$product->name}}' />
                             </li>
                             <li data-target='#carousel-custom' data-slide-to='1'>
                                 <img src='/template/web/images//shop/single-products/product-1.jpg' alt='' />
