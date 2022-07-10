@@ -30,7 +30,7 @@ Route::get('admin/logout',
 
 Route::prefix('admin')->name('admin.')->middleware('auth:admin')->group(function () {
 
-
+    Route::get('/',[DashboardController::class, 'index'])->name('index');
     Route::get('dashboard',[DashboardController::class, 'dashboard'])->name('dashboard');
 
     Route::post('chartmonth',[DashboardController::class, 'chart_month'])->name('chart_month');

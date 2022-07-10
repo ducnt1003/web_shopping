@@ -8,6 +8,11 @@ use Illuminate\Support\Facades\DB;
 
 class DashboardController extends Controller
 {
+    public function index()
+    {
+        return redirect('/admin/dashboard');
+    }
+
     public function dashboard()
     {
         $sales = DB::table('sales')->select(DB::raw('sum(money) as totalmoney, month,year'))
