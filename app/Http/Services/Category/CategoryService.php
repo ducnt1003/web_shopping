@@ -20,7 +20,7 @@ class CategoryService
     public function store($request){
         try {
             $request->except('_token');
-            Category::create($request->all());
+            Category::insert($request->all());
             Session::flash('success','Thêm danh mục mới thành công');
         }catch (\Exception $err){
             Session::flash('error','Thêm danh mục mới lỗi');

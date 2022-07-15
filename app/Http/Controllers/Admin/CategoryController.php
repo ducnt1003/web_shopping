@@ -23,7 +23,7 @@ class CategoryController extends Controller
         ]);
     }
 
-    public function store(CategoryRequest $request){
+    public function store(Request $request){
         $this->categoryService->store($request);
         return redirect()->back();
     }
