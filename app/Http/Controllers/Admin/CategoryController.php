@@ -52,13 +52,10 @@ class CategoryController extends Controller
     public function destroy(Request $request){
         $result = $this->categoryService->destroy($request);
         if ($result){
-            return response()->json([
-                'error'=>false,
-                'message'=>'Xóa thành công danh mục'
-            ]);
+            return redirect(route('admin.categories.index'))
+                ->with('success', __('Xóa thành công!'));
         }
-        return response()->json([
-            'error'=>true
-        ]);
+        return redirect(route('admin.categories.index'))
+            ->with('error', __('xóa không thành công!'));
     }
 }

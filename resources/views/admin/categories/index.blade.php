@@ -23,40 +23,37 @@
         </div> --}}
     </table>
 @stop
-@section('delete_category_js')
-    <script>
-        $.ajaxSetup({
-            headers: {
-                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-            }
-        });
-    </script>
-    <script>
-        function removeRow(id,url){
-            if (confirm('Bạn có chắc muốn xóa')){
-                $.ajax({
-                    type:'DELETE',
-                    datatype:'JSON',
-                    data:{id},
-                    url:url,
-                    success: function (result){
-                        if (result.error === false){
-                            alert(result.message);
-                            location.reload();
-                        }
-                        else {
-                            alert('Xóa lỗi vui lòng thử lại');
-                        }
-                    }
-                })
-            }
-        }
-    </script>
+
+@section('modal')
+    <!-- Modal -->
+    <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form action="{{route('admin.categories.delete')}}" method="post">
+                    @csrf
+                    @method('DELETE')
+                    <input type="hidden" name="category_id" id="category_id" value="0">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="deleteModalLabel">Xóa category!</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="border: 0px"><i class="fas fa-times"></i></button>
+                    </div>
+                    <div class="modal-body">
+                        Bạn có muốn xóa category này?
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">đóng</button>
+                        <button type="submit" class="btn btn-danger">xóa</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 @stop
+
 @section('js') 
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script type="text/javascript" src="https://cdn.datatables.net/1.11.2/js/jquery.dataTables.min.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="{{ asset('template/plugins/datatables-buttons/js/dataTables.buttons.min.js') }}"></script>
     <script src="{{ asset('template/plugins/jszip/jszip.min.js') }}"></script>
     <script src="{{ asset('template/plugins/pdfmake/pdfmake.min.js') }}"></script>
@@ -77,5 +74,15 @@
                
         } );
     } );
+    </script>
+    <script type="text/javascript">
+        $('.delete').click(function(){
+            $('#category_id').val($(this).attr('data'))
+            var myModal = new bootstrap.Modal($('#deleteModal'),
+                {
+                    keyboard: false
+                });
+            myModal.show();
+        });
     </script>
 @stop

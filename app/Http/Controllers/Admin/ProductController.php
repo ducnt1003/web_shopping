@@ -47,7 +47,7 @@ class ProductController extends Controller
         ]);
     }
 
-    public function store(ProductRequest $request)
+    public function store(Request $request)
     {
         $this->productService->store($request);
         return redirect()->back();
@@ -80,14 +80,11 @@ class ProductController extends Controller
     public function destroy(Request $request){
         $result = $this->productService->destroy($request);
         if ($result){
-            return response()->json([
-                'error'=>false,
-                'message'=>'Xóa thành công danh mục'
-            ]);
+            return redirect(route('admin.products.index'))
+                ->with('success', __('Xóa thành công!'));
         }
-        return response()->json([
-            'error'=>true
-        ]);
+        return redirect(route('admin.products.index'))
+            ->with('error', __('xóa không thành công!'));
     }
 
     public function getBarcode($id){

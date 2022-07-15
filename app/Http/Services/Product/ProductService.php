@@ -48,7 +48,7 @@ class ProductService
     }
 
     public function destroy($request){
-        $id = (integer)$request->input('id');
+        $id = (integer)$request->input('product_id');
         $category = Product::where('id',$id)->first();
         if ($category){
             return Product::where('id',$id)->delete();

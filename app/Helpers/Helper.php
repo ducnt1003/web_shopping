@@ -25,10 +25,10 @@ class Helper
                             <a class="btn btn-primary btn-sm" href="/admin/categories/edit/'.$category->id.'">
                                 <i class="fas fa-edit"></i>
                             </a>
-                            <a class="btn btn-danger btn-sm" href="#"
-                                onclick="removeRow(' . $category->id . ',\'/admin/categories/delete\')">
+                            <button type="button" class="delete btn btn-danger" data="'. $category->id .'">
                                 <i class="fas fa-trash"></i>
-                            </a>
+                            </button>
+                            
                         </td>
                     </tr>
                 ';

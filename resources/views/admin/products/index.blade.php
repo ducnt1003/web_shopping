@@ -46,10 +46,9 @@
                     <a class="btn btn-primary btn-sm" href="/admin/products/edit/{{$product->id}}">
                         <i class="fas fa-edit"></i>
                     </a>
-                    <a class="btn btn-danger btn-sm" href="#"
-                       onclick="removeRow({{$product->id}},'/admin/products/delete')">
+                    <button type="button" class="delete btn btn-danger" data="{{$product->id}}">
                         <i class="fas fa-trash"></i>
-                    </a>
+                    </button>
                 </td>
 
             </tr>
@@ -61,7 +60,35 @@
     </div> --}}
     
 @stop
+@section('modal')
+    <!-- Modal -->
+    <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form action="{{route('admin.products.delete')}}" method="post">
+                    @csrf
+                    @method('DELETE')
+                    <input type="hidden" name="product_id" id="product_id" value="0">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="deleteModalLabel">Xóa product!</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="border: 0px"><i class="fas fa-times"></i></button>
+                    </div>
+                    <div class="modal-body">
+                        Bạn có muốn xóa product này?
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">đóng</button>
+                        <button type="submit" class="btn btn-danger">xóa</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+@stop
+
+
 @section('js') 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script type="text/javascript" src="https://cdn.datatables.net/1.11.2/js/jquery.dataTables.min.js"></script>
 
@@ -85,5 +112,15 @@
                
         } );
     } );
+    </script>
+    <script type="text/javascript">
+        $('.delete').click(function(){
+            $('#product_id').val($(this).attr('data'))
+            var myModal = new bootstrap.Modal($('#deleteModal'),
+                {
+                    keyboard: false
+                });
+            myModal.show();
+        });
     </script>
 @stop
