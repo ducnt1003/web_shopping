@@ -31,9 +31,9 @@ return [
     ],
 
     'google' => [
-        'client_id' => '367028965620-d1lcnvo0nhdhgqjaclgoqsl1qul16669.apps.googleusercontent.com',
-        'client_secret' => 'ZOhqYSpQPJ7lLe21NJNaw0tR',
-        'redirect' => 'http://rhust.app.com/auth/google-callback',
+        'client_id' => env('GOOGLE_CLIENT_ID'),
+        'client_secret' => env('GOOGLE_CLIENT_SECRET'),
+        'redirect' => env('GOOGLE_REDIRECT'),
     ],
 
     'facebook' => [

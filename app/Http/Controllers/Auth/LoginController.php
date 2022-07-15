@@ -30,7 +30,7 @@ class LoginController extends Controller
 
         if (Auth::guard('admin')->attempt($credentials)) {
             $request->session()->regenerate();
-            return redirect()->intended(route('admin.dashboard'));
+            return redirect('/admin/dashboard');
         }else{
             return back()->withErrors([
                 'email' => 'Tài khoản hoặc mật khẩu không đúng. ',

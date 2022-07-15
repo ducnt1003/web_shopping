@@ -63,6 +63,69 @@
                 }
             }
         })
+    });
+    $('#upload1').change(function (){
+        const form = new FormData();
+        form.append('file',$(this)[0].files[0]);
+        $.ajax({
+            contentType:false,
+            processData: false,
+            type:'POST',
+            dataType:'JSON',
+            data:form,
+            url: '/admin/upload',
+            success:function (results){
+                if (results.error===false){
+                    $('#image_show1').html('<a href="' + results.url +'"target="_blank">'+
+                        '<img class = "img-thumbnail" src="'+results.url+'" width="200px"></a>');
+                    $('#photo1').val(results.url);
+                }else{
+                    alert('Upload file lỗi');
+                }
+            }
+        })
+    });
+    $('#upload2').change(function (){
+        const form = new FormData();
+        form.append('file',$(this)[0].files[0]);
+        $.ajax({
+            contentType:false,
+            processData: false,
+            type:'POST',
+            dataType:'JSON',
+            data:form,
+            url: '/admin/upload',
+            success:function (results){
+                if (results.error===false){
+                    $('#image_show2').html('<a href="' + results.url +'"target="_blank">'+
+                        '<img class = "img-thumbnail" src="'+results.url+'" width="200px"></a>');
+                    $('#photo2').val(results.url);
+                }else{
+                    alert('Upload file lỗi');
+                }
+            }
+        })
+    })
+    $('#upload3').change(function (){
+        const form = new FormData();
+        form.append('file',$(this)[0].files[0]);
+        $.ajax({
+            contentType:false,
+            processData: false,
+            type:'POST',
+            dataType:'JSON',
+            data:form,
+            url: '/admin/upload',
+            success:function (results){
+                if (results.error===false){
+                    $('#image_show3').html('<a href="' + results.url +'"target="_blank">'+
+                        '<img class = "img-thumbnail" src="'+results.url+'" width="200px"></a>');
+                    $('#photo3').val(results.url);
+                }else{
+                    alert('Upload file lỗi');
+                }
+            }
+        })
     })
 </script>
 

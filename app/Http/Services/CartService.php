@@ -60,7 +60,7 @@ class CartService
     }
 
     public function getCartList(){
-        return Customer::orderByDesc('id')->paginate(15);
+        return Customer::orderByDesc('id')->get();
     }
 
     public function destroy($request){

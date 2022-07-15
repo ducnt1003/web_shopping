@@ -19,6 +19,9 @@ class Product extends Model
         'barcode',
         'category_id',
         'photo',
+        'photo1',
+        'photo2',
+        'photo3',
         'active',
     ];
 

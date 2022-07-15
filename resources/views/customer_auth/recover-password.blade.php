@@ -17,14 +17,18 @@
                 <img src="images/logo.png" alt="">
               </a>
               <h2 class="text-center">Welcome Back</h2>
-              <form action="{{route('forgetpassword.post')}}" method="post" class="text-left clearfix">
+              <form action="{{route('resetpassword.post')}}" method="post" class="text-left clearfix">
                 @csrf
-                <p>Please enter the email address for your account. A verification code will be sent to you. Once you have received the verification code, you will be able to choose a new password for your account.</p>
+                <input type="hidden" name="token" value="{{ $token }}">
+                <p>You are only one step a way from your new password, recover your password now.</p>
                 <div class="form-group">
-                  <input type="email" class="form-control" id="email" name="email" placeholder="Account email address">
+                  <input type="password" class="form-control" id="password" name="password" placeholder="Password">
                 </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" id="password_confirmation" name="password_confirmation" placeholder="Password Conformation">
+                  </div>
                 <div class="text-center">
-                  <button type="submit" class="btn btn-main text-center">Request password reset</button>
+                  <button type="submit" class="btn btn-main text-center">Reset password password</button>
                 </div>
               </form>
               <p class="mt-20"><a href="{{route('login')}}">Back to log in</a></p>

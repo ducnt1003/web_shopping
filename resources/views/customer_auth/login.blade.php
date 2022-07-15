@@ -53,7 +53,7 @@ FACEBOOK: https://www.facebook.com/themefisher
                         </div>                       
                     </form>
                     <p class="mt-20">New in this site ?<a href="{{route('register')}}"> Create New Account</a></p>
-                    <p class="mt-20"><a href="#">Forgot your password </a></p>
+                    <p class="mt-20"><a href="{{route('forgetpassword')}}">Forgot your password </a></p>
                 </div>
             </div>
         </div>

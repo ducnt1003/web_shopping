@@ -22,6 +22,7 @@ class CategorySeeder extends Seeder
             'parent_id' => '0',
             'tax' => '10',
             'unit' => 'chiếc',
+            'photo' => '/template/web/images/shop/category/category-1.jpg',
             'created_at' => new \dateTime,
             'updated_at' => new \dateTime,
         ]);
@@ -31,6 +32,7 @@ class CategorySeeder extends Seeder
             'parent_id' => '0',
             'tax' => '10',
             'unit' => 'chiếc',
+            'photo' => '/template/web/images/shop/category/category-2.jpg',
             'created_at' => new \dateTime,
             'updated_at' => new \dateTime,
         ]);
@@ -40,6 +42,7 @@ class CategorySeeder extends Seeder
             'parent_id' => '0',
             'tax' => '10',
             'unit' => 'chiếc',
+            'photo' => '/template/web/images/shop/category/category-3.jpg',
             'created_at' => new \dateTime,
             'updated_at' => new \dateTime,
         ]);

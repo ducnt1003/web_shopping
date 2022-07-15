@@ -58,4 +58,7 @@ Route::get('logout',[CustomerController::class,'logout'])->name('logout');
 Route::get('/register',[CustomerController::class,'register'])->name('register');
 Route::post('/register',[CustomerController::class,'store'])->name('register.store');
 Route::get('/forgetpassword',[CustomerController::class,'forgetpassword'])->name('forgetpassword');
+Route::post('/forgetpassword',[CustomerController::class,'submitForgotPasswordForm'])->name('forgetpassword.post');
+Route::get('/reset-password/{token}', [CustomerController::class, 'showResetPasswordForm'])->name('resetpassword.get');
+Route::post('/reset-password', [CustomerController::class, 'submitResetPasswordForm'])->name('resetpassword.post');
 Route::get('/rss',[RssController::class,'index'])->name('rss');

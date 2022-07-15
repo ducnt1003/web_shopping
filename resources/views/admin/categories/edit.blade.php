@@ -3,7 +3,8 @@
     @include('admin.alert')
 @stop
 @section('content')
-    <form action="" method="post">
+    <form action="" method="post" enctype="multipart/form-data">
+        @csrf
         <div class="card-body">
             <div class="form-group">
                 <label >Tên Danh Mục</label>

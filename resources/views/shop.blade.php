@@ -45,12 +45,12 @@
                         <div class="panel panel-default">
                             <div class="panel-heading" role="tab" id="headingOne">
                                 <h4 class="panel-title">
-                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                         {{$cate_parent1->name}}
                                     </a>
                                 </h4>
                             </div>
-                            <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                            <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
                                 <div class="panel-body">
                                     <ul>
                                         <li><a href="{{route('shop',$cate_parent1->id)}}">{{$cate_parent1->name}}</a></li>
@@ -118,12 +118,18 @@
                         </div>
                     </div>
                     @endforeach
+                        
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-md-offset-8">
                         <div class="card-footer clearfix">
                             {{$products->links('vendor.pagination.bootstrap-4')}}
                         </div>
+                    </div>   
                 </div>
+                
             </div>
-
+            
         </div>
     </div>
 </section>

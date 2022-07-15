@@ -31,7 +31,7 @@ class CategoryService
     }
 
     public function getAll(){
-        return Category::orderByDesc('id')->paginate(20);
+        return Category::orderByDesc('id')->get();
     }
 
     public function update($categoryRequest,$category){

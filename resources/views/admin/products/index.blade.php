@@ -56,9 +56,9 @@
         @endforeach
         </tbody>
     </table>
-    <div class="card-footer clearfix">
+    {{-- <div class="card-footer clearfix">
         {{$products->links('vendor.pagination.bootstrap-4')}}
-    </div>
+    </div> --}}
     
 @stop
 @section('js') 

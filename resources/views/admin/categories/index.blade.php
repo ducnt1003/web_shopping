@@ -18,9 +18,9 @@
         <tbody>
         {!! \App\Helpers\Helper::category_list($categories) !!}
         </tbody>
-        <div class="card-footer clearfix">
+        {{-- <div class="card-footer clearfix">
             {{$categories->links('vendor.pagination.bootstrap-4')}}
-        </div>
+        </div> --}}
     </table>
 @stop
 @section('delete_category_js')
@@ -51,5 +51,31 @@
                 })
             }
         }
+    </script>
+@stop
+@section('js') 
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.11.2/js/jquery.dataTables.min.js"></script>
+
+    <script src="{{ asset('template/plugins/datatables-buttons/js/dataTables.buttons.min.js') }}"></script>
+    <script src="{{ asset('template/plugins/jszip/jszip.min.js') }}"></script>
+    <script src="{{ asset('template/plugins/pdfmake/pdfmake.min.js') }}"></script>
+    <script src="{{ asset('template/plugins/pdfmake/vfs_fonts.js') }}"></script>
+    <script src="{{ asset('template/plugins/datatables-buttons/js/buttons.html5.min.js') }}"></script>
+    <script src="{{ asset('template/plugins/datatables-buttons/js/buttons.print.min.js') }}"></script>
+    <script src="{{ asset('template/plugins/datatables-buttons/js/buttons.colVis.min.js') }}"></script>
+
+
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $('#example').DataTable( {
+            dom: 'Bfrtip',
+            // buttons: [
+            //     'copy', 
+            // ]                   
+            // "info": false,  
+               
+        } );
+    } );
     </script>
 @stop

@@ -77,7 +77,7 @@
                 <textarea name="description" class="form-control">{{$product->description}}</textarea>
             </div>
 
-            <div class="form-group">
+            {{-- <div class="form-group">
                 <label for="upload">Ảnh sản phẩm</label>
                 <input type="file" class="form-control" id="upload">
                 <div id="image_show">
@@ -86,7 +86,56 @@
                     </a>
                 </div>
                 <input type="hidden" id="photo" value="{{$product->photo}}" name="photo">
+            </div> --}}
+
+            <label for="upload">Ảnh sản phẩm</label>
+            <div class="row">     
+                <div class="col-md-3">
+                    <div class="form-group"> 
+                        <input type="file" class="form-control upload-img" id="upload">
+                        <div id="image_show">
+                            <a href="{{$product->photo}}" target="_blank">
+                                <img src="{{$product->photo}}"width="100px">
+                            </a>
+                        </div>
+                        <input type="hidden" id="photo" name="photo">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="form-group">
+                        <input type="file" class="form-control upload-img" id="upload1">
+                        <div id="image_show1">
+                            <a href="{{$product->photo1}}" target="_blank">
+                                <img src="{{$product->photo1}}"width="100px">
+                            </a>
+                        </div>
+                        <input type="hidden" id="photo1" name="photo1">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="form-group">
+                        <input type="file" class="form-control upload-img" id="upload2">
+                        <div id="image_show2">
+                            <a href="{{$product->photo2}}" target="_blank">
+                                <img src="{{$product->photo2}}"width="100px">
+                            </a>
+                        </div>
+                        <input type="hidden" id="photo2" name="photo2">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="form-group">
+                        <input type="file" class="form-control upload-img" id="upload3">
+                        <div id="image_show3">
+                            <a href="{{$product->photo3}}" target="_blank">
+                                <img src="{{$product->photo3}}"width="100px">
+                            </a>
+                        </div>
+                        <input type="hidden" id="photo3" name="photo3">
+                    </div>
+                </div>
             </div>
+
             <div class="form-group">
                 <label>Kích Hoạt</label>
                 <div class="form-check">
