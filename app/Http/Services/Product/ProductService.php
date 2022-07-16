@@ -20,6 +20,18 @@ class ProductService
     public function store($request){
         try {
             $request->except('_token');
+            $data[] = [
+                'name' => $request->name,
+                'description' => $request->description,
+                'photo' => $request->photo,
+                'price' => $request->price,
+                'color' => $request->color,
+                'category_id' => $request->category_id,
+                'active' => $request->active,
+                'photo1' => $request->photo1,
+                'photo2' => $request->photo2,
+                'photo3' => $request->photo3
+            ];
             Product::create($request->all());
             Session::flash('success','Thêm sản phẩm mới thành công');
         }catch (\Exception $err){
