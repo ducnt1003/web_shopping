@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\Product;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -13,11 +14,16 @@ class DashboardController extends Controller
         return redirect('/admin/dashboard');
     }
 
+    public function getNameProduct($id){
+        $product = Product::where('id',$id)->first();
+        return $product->name;
+    }
+
     public function dashboard()
     {
         $sales = DB::table('sales')->select(DB::raw('sum(money) as totalmoney, month,year'))
             ->groupByRaw('month,year')
-            ->orderByRaw('year DESC, month DESC')->take(12)->get();
+            ->orderByRaw('year DESC, month DESC')->skip(5)->take(12)->get();
 
         $month = date('m');
         $year = date('Y');
@@ -43,18 +49,19 @@ class DashboardController extends Controller
             $year = date('Y');
         };
 
-        $products_m = DB::table('sales')->select(DB::raw('product_id,sold_quantity'))
+        $products_m = DB::table('sales')->select('product_id',DB::raw('SUM(sold_quantity) as quantity'))
         ->where([
             ['month', '=', $month],
             ['year', '=', $year]
         ])
-        ->orderBy('sold_quantity', 'DESC')
+        ->groupBy('product_id')
+        ->orderBy('quantity', 'DESC')
         ->take(5)->get();
         $label_chart = [];
         $data_chart =[];
         foreach($products_m as $product){
             $a1 = $product->product_id;
-            $a2 = $product->sold_quantity;
+            $a2 = $product->quantity;
             array_push($label_chart,$a1);
             array_push($data_chart,$a2);
         }
@@ -67,7 +74,7 @@ class DashboardController extends Controller
                 "data" :{
                     "labels" : ['.$label_chart.'],
                     "datasets" : [{
-                        "label" : "da ban trong thang",
+                        "label" : "Da ban trong thang",
                         "backgroundColor" : "rgb(255, 128, 128)",
                         "data" : ['.$data_chart.']
                     }]
@@ -137,6 +144,7 @@ class DashboardController extends Controller
         $months = [];
         foreach($select_months as $month){
             $a = $month->month . '/' . $month->year;
+            if ($month->month > 7 && $month->year==2022) continue;
             array_push($months,$a);
         }
         return $months;

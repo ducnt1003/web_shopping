@@ -39,44 +39,49 @@
             <div class="row">
                 <div class="col-md-3">
                     <div class="team-member text-center">
-                        <img class="img-circle" src="template/web/images/team/hungdoan.jpg">
-                        <h4>Xuân Hưng</h4>
+                        <img class="img-circle" src="template/web/images/team/images.jpg">
+                        <h4>Thành Long</h4>
                         <p>Developer</p>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="team-member text-center">
-                        <img class="img-circle" src="template/web/images/team/trungduc.png">
+                        <img class="img-circle" src="template/web/images/team/images1.jpg
+                        ">
                         <h4>Trung Đức </h4>
                         <p>Developer</p>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="team-member text-center">
-                        <img class="img-circle" src="template/web/images/team/team-1.jpg">
-                        <h4>Duy Long</h4>
-                        <p>Shop Manager</p>
+                        <img class="img-circle" src="template/web/images/team/images5.jpg
+                        ">
+                        <h4>Nguyễn Ngân</h4>
+                        <p>Developer</p>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="team-member text-center">
-                        <img class="img-circle" src="template/web/images/team/hanguyen.png">
-                        <h4>Hà Nguyễn</h4>
-                        <p>Founder</p>
+                        <img class="img-circle" src="template/web/images/team/images2.jpg
+                        ">
+                        <h4>Hoàng Sơn</h4>
+                        <p>Developer</p>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="team-member text-center">
-                        <img class="img-circle"src="template/web/images/team/vietnguyen.png">
-                        <h4>Việt Nguyễn</h4>
-                        <p>Shop Manager</p>
+                        <img class="img-circle"src="template/web/images/team/images3.jpg
+                        ">
+                        <h4>Thủy Linh</h4>
+                        <p>Developer</p>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="team-member text-center">
-                        <img class="img-circle" src="template/web/images/team/canhnam.png">
-                        <h4>Cảnh Nam</h4>
-                        <p>Shop Manager</p>
+                        <img class="img-circle" src="template/web/images/team/images4.jpg
+                        ">
+                        <h4>Bích Trang</h4>
+                        <p>Developer</p>
                     </div>
                 </div>
             </div>

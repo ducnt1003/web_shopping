@@ -46,11 +46,11 @@
                 <!-- Footer Social Links -->
                 <div class="social-icon">
                     <ul>
-                        <li><a class="fb-icon" href="https://www.facebook.com/themefisher"><i class="tf-ion-social-facebook"></i></a></li>
-                        <li><a href="https://www.twitter.com/themefisher"><i class="tf-ion-social-twitter"></i></a></li>
-                        <li><a href="https://themefisher.com/"><i class="tf-ion-social-dribbble-outline"></i></a></li>
-                        <li><a href="https://themefisher.com/"><i class="tf-ion-social-googleplus-outline"></i></a></li>
-                        <li><a href="https://themefisher.com/"><i class="tf-ion-social-pinterest-outline"></i></a></li>
+                        <li><a class="fb-icon" href=""><i class="tf-ion-social-facebook"></i></a></li>
+                        <li><a href=""><i class="tf-ion-social-twitter"></i></a></li>
+                        <li><a href=""><i class="tf-ion-social-dribbble-outline"></i></a></li>
+                        <li><a href=""><i class="tf-ion-social-googleplus-outline"></i></a></li>
+                        <li><a href=""><i class="tf-ion-social-pinterest-outline"></i></a></li>
                     </ul>
                 </div>
                 <!-- / End Contact Details -->

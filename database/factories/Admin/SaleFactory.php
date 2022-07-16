@@ -24,9 +24,9 @@ class SaleFactory extends Factory
     public function definition()
     {
         return [
-            'product_id' => $this->faker->numberBetween(0, 10),
+            'product_id' => $this->faker->numberBetween(1, 10),
             'month'=> $this->faker->numberBetween(1, 12),
-            'year'=> $this->faker->numberBetween(2017, 2021),
+            'year'=> $this->faker->numberBetween(2017, 2022),
             'sold_quantity' => $this->faker->numberBetween(300, 3000),
             'money' => $this->faker->numberBetween(10000, 2000000),
         ];

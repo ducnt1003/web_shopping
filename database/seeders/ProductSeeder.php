@@ -76,5 +76,8 @@ class ProductSeeder extends Seeder
             'created_at' => new \dateTime,
             'updated_at' => new \dateTime,
         ]);
+        Product::factory()
+        ->count(10)
+        ->create();
     }
 }
