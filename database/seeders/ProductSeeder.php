@@ -24,7 +24,10 @@ class ProductSeeder extends Seeder
             'created_by' => '1',
             'brand_id' => '1',
             'active' => '1',
-            'photo' => 'https://bizweb.dktcdn.net/100/399/392/articles/ao-thun-nam-dep-gia-re-3.jpeg?v=1622709874737',
+            'photo' => '/template/web/images/quan-short-10-370x370.jpg',
+            'photo1' => '/template/web/images/Xam-sang-1-370x370.jpg',
+            'photo2' => '/template/web/images/Xam-sang-2-370x370.jpg',
+            'photo3' => '/template/web/images/Xam-sang-4-370x370.jpg',
             'created_at' => new \dateTime,
             'updated_at' => new \dateTime,
         ]);
@@ -36,7 +39,10 @@ class ProductSeeder extends Seeder
             'created_by' => '1',
             'brand_id' => '1',
             'active' => '1',
-            'photo' => 'https://bizweb.dktcdn.net/100/399/392/articles/ao-thun-nam-dep-gia-re-3.jpeg?v=1622709874737',
+            'photo' => 'https://bumshop.com.vn/wp-content/uploads/2020/11/qt047-quan-jogger-thun-nam-xanh-1-370x555.jpg',
+            'photo1' => 'https://bumshop.com.vn/wp-content/uploads/2020/11/qt047-quan-jogger-thun-nam-xanh-3-370x555.jpg',
+            'photo2' => 'https://bumshop.com.vn/wp-content/uploads/2020/11/qt047-quan-jogger-thun-nam-xanh-370x555.jpg',
+            'photo3' => 'https://bumshop.com.vn/wp-content/uploads/2020/11/qt047-quan-jogger-thun-nam-xanh-2-370x554.jpg',
             'created_at' => new \dateTime,
             'updated_at' => new \dateTime,
         ]);
@@ -48,7 +54,10 @@ class ProductSeeder extends Seeder
             'created_by' => '1',
             'brand_id' => '1',
             'active' => '1',
-            'photo' => 'https://bizweb.dktcdn.net/100/399/392/articles/ao-thun-nam-dep-gia-re-3.jpeg?v=1622709874737',
+            'photo' => 'https://bumshop.com.vn/wp-content/uploads/2019/07/qt010-quan-jogger-thun-muoi-tieu-nam-370x555.jpg',
+            'photo1' => 'https://bumshop.com.vn/wp-content/uploads/2019/07/qt010-quan-jogger-thun-muoi-tieu-nam-370x555.jpg',
+            'photo2' => 'https://bumshop.com.vn/wp-content/uploads/2019/07/qt010-quan-jogger-thun-muoi-tieu-nam-1-370x555.jpg',
+            'photo3' => 'https://bumshop.com.vn/wp-content/uploads/2019/07/qt010-quan-jogger-thun-muoi-tieu-nam-2-370x555.jpg',
             'created_at' => new \dateTime,
             'updated_at' => new \dateTime,
         ]);
@@ -60,7 +69,10 @@ class ProductSeeder extends Seeder
             'created_by' => '1',
             'brand_id' => '1',
             'active' => '1',
-            'photo' => 'https://bizweb.dktcdn.net/100/399/392/articles/ao-thun-nam-dep-gia-re-3.jpeg?v=1622709874737',
+            'photo' => 'https://bumshop.com.vn/wp-content/uploads/2021/11/quan-short-13-370x370.jpg',
+            'photo1' => 'https://bumshop.com.vn/wp-content/uploads/2021/11/Camo-sang-1-370x370.jpg',
+            'photo2' => 'https://bumshop.com.vn/wp-content/uploads/2021/11/Camo-sang-3-370x370.jpg',
+            'photo3' => 'https://bumshop.com.vn/wp-content/uploads/2021/11/Camo-sang-4-370x370.jpg',
             'created_at' => new \dateTime,
             'updated_at' => new \dateTime,
         ]);
@@ -72,12 +84,90 @@ class ProductSeeder extends Seeder
             'created_by' => '1',
             'brand_id' => '1',
             'active' => '1',
-            'photo' => 'https://bizweb.dktcdn.net/100/399/392/articles/ao-thun-nam-dep-gia-re-3.jpeg?v=1622709874737',
+            'photo' => 'https://bumshop.com.vn/wp-content/uploads/2022/05/TTL963-AO-THUN-TAY-LO-DEGGREY-1-370x370.jpg',
+            'photo1' => 'https://bumshop.com.vn/wp-content/uploads/2022/05/TTL963-AO-THUN-TAY-LO-DEGGREY-10-370x370.jpg',
+            'photo2' => 'https://bumshop.com.vn/wp-content/uploads/2022/05/TTL963-AO-THUN-TAY-LO-DEGGREY-2-370x370.jpg',
+            'photo3' => 'https://bumshop.com.vn/wp-content/uploads/2022/05/TTL963-AO-THUN-TAY-LO-DEGGREY-8-370x370.jpg',
             'created_at' => new \dateTime,
             'updated_at' => new \dateTime,
         ]);
-        Product::factory()
-        ->count(10)
-        ->create();
+        Product::create([
+            'name' => 'T-shirt 06',
+            'price' => '30',
+            'description' => 'Beutiful shirt',
+            'category_id' => '1',
+            'created_by' => '1',
+            'brand_id' => '1',
+            'active' => '1',
+            'photo' => 'https://bumshop.com.vn/wp-content/uploads/2019/12/qcsw01-mau-vang-370x370.jpg',
+            'photo1' => 'https://bumshop.com.vn/wp-content/uploads/2019/11/QCSW01-3-min-370x278.jpg',
+            'photo2' => 'https://bumshop.com.vn/wp-content/uploads/2019/12/qcsw01-ao-sweater-mau-vang3-370x370.jpg',
+            'photo3' => 'https://bumshop.com.vn/wp-content/uploads/2019/12/qcsw01-ao-sweater-mau-vang2-370x370.jpg',
+            'created_at' => new \dateTime,
+            'updated_at' => new \dateTime,
+        ]);
+        Product::create([
+            'name' => 'T-shirt 07',
+            'price' => '30',
+            'description' => 'Beutiful shirt',
+            'category_id' => '1',
+            'created_by' => '1',
+            'brand_id' => '1',
+            'active' => '1',
+            'photo' => 'https://bumshop.com.vn/wp-content/uploads/2019/09/ao-sweater-tron-TRON-1-min-370x555.jpg',
+            'photo1' => 'https://bumshop.com.vn/wp-content/uploads/2019/09/ao-sweater-tron-TRON-1-min-370x555.jpg',
+            'photo2' => 'https://bumshop.com.vn/wp-content/uploads/2019/09/ao-sweater-tron-XANH-1-min-370x493.jpg',
+            'photo3' => 'https://bumshop.com.vn/wp-content/uploads/2019/09/ao-sweater-tron-XANH-2-min-370x370.jpg',
+            'created_at' => new \dateTime,
+            'updated_at' => new \dateTime,
+        ]);
+        Product::create([
+            'name' => 'T-shirt 08',
+            'price' => '30',
+            'description' => 'Beutiful shirt',
+            'category_id' => '1',
+            'created_by' => '1',
+            'brand_id' => '1',
+            'active' => '1',
+            'photo' => 'https://bumshop.com.vn/wp-content/uploads/2021/12/23.HOODIE-PRODBLAG-3-370x555.jpg',
+            'photo1' => 'https://bumshop.com.vn/wp-content/uploads/2021/12/23.HOODIE-PRODBLAG-4-e1639125135817-370x370.jpg',
+            'photo2' => 'https://bumshop.com.vn/wp-content/uploads/2021/12/23.HOODIE-PRODBLAG-2-370x555.jpg',
+            'photo3' => 'https://bumshop.com.vn/wp-content/uploads/2021/12/23.HOODIE-PRODBLAG-1-370x555.jpg',
+            'created_at' => new \dateTime,
+            'updated_at' => new \dateTime,
+        ]);
+        Product::create([
+            'name' => 'T-shirt 09',
+            'price' => '30',
+            'description' => 'Beutiful shirt',
+            'category_id' => '1',
+            'created_by' => '1',
+            'brand_id' => '1',
+            'active' => '1',
+            'photo' => 'https://bumshop.com.vn/wp-content/uploads/2021/11/HOODIE-SPACE-6-370x370.jpg',
+            'photo1' => 'https://bumshop.com.vn/wp-content/uploads/2021/11/HOODIE-SPACE-1-370x543.jpg',
+            'photo2' => 'https://bumshop.com.vn/wp-content/uploads/2021/11/HOODIE-SPACE-2-370x547.jpg',
+            'photo3' => 'https://bumshop.com.vn/wp-content/uploads/2021/11/HOODIE-SPACE-4-370x409.jpg',
+            'created_at' => new \dateTime,
+            'updated_at' => new \dateTime,
+        ]);
+        Product::create([
+            'name' => 'T-shirt 10',
+            'price' => '30',
+            'description' => 'Beutiful shirt',
+            'category_id' => '1',
+            'created_by' => '1',
+            'brand_id' => '1',
+            'active' => '1',
+            'photo' => 'https://cdn.chiaki.vn/unsafe/0x900/left/top/smart/filters:quality(90)/https://chiaki.vn/upload/product/2021/12/vi-nu-cam-tay-dang-dai-taomicmic-vd245-61a741d4d20ff-01122021163516.jpg',
+            'photo1' => 'https://cdn.chiaki.vn/unsafe/0x900/left/top/smart/filters:quality(90)/https://chiaki.vn/upload/product/2021/12/vi-nu-cam-tay-dang-dai-taomicmic-vd245-61a741d4dee69-01122021163516.jpg',
+            'photo2' => 'https://cdn.chiaki.vn/unsafe/0x900/left/top/smart/filters:quality(90)/https://chiaki.vn/upload/product/2021/12/vi-nu-cam-tay-dang-dai-taomicmic-vd245-61ad8a0a4aa97-06122021105658.png',
+            'photo3' => 'https://cdn.chiaki.vn/unsafe/0x900/left/top/smart/filters:quality(90)/https://chiaki.vn/upload/product/2021/12/vi-nu-cam-tay-dang-dai-taomicmic-vd245-61a741d531b3d-01122021163517.jpgg',
+            'created_at' => new \dateTime,
+            'updated_at' => new \dateTime,
+        ]);
+        // Product::factory()
+        // ->count(10)
+        // ->create();
     }
 }

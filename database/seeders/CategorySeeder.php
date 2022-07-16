@@ -47,9 +47,9 @@ class CategorySeeder extends Seeder
             'updated_at' => new \dateTime,
         ]);
         Category::create([
-            'name' => 'Bag',
+            'name' => 'Short',
             'description' => 'She’s here…Summer 2021!',
-            'parent_id' => '3',
+            'parent_id' => '1',
             'tax' => '10',
             'unit' => 'Cái',
             'created_at' => new \dateTime,
@@ -74,7 +74,7 @@ class CategorySeeder extends Seeder
             'updated_at' => new \dateTime,
         ]);
         Category::create([
-            'name' => 'Coat',
+            'name' => 'Hoodie',
             'description' => 'She’s here…Summer 2021!',
             'parent_id' => '2',
             'tax' => '15',

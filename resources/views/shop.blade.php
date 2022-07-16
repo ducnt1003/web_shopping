@@ -109,7 +109,7 @@
                     <div class="col-md-4">
                         <div class="product-item">
                             <div class="product-thumb">
-                                <img class="img-responsive" src="{{$product->photo}}" alt="{{$product->name}}" />
+                                <img class="img-responsive" src="{{$product->photo}}" alt="{{$product->name}}" style="height:400px;"/>
                             </div>
                             <div class="product-content">
                                 <h4><a href="{{route('product',$product->id)}}">{{$product->name}}</a></h4>

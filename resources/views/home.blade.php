@@ -37,7 +37,7 @@
                 @foreach($categories12 as $category12)
                 <div class="category-box">
                     <a href="{{route('shop',$category12->id)}}">
-                        <img src="{{ asset($category12->photo ? $category12->photo : '/template/images/shop/category/category-1.jpg') }}"></a>
+                        <img src="{{ asset($category12->photo ? $category12->photo : '/template/images/shop/category/category-1.jpg') }}" style="height:400px;"></a>
                         <div class="content">
                             <h3>{{$category12->name}}</h3>
                             <p>{{$category12->description}}</p>
@@ -49,7 +49,7 @@
             <div class="col-md-6">
                 <div class="category-box category-box-2">
                     <a href="{{route('shop',$category3->id)}}">
-                        <img src="{{ asset($category3->photo ? $category3->photo : '/template/images/shop/category/category-3.jpg') }}"></a>
+                        <img src="{{ asset($category3->photo ? $category3->photo : '/template/images/shop/category/category-3.jpg') }}" style="height:800px;"></a>
                         <img src="{{$category3->photo}}" alt="{{$category3->name}}" />
                         <div class="content">
                             <h3>{{$category3->name}}</h3>
@@ -74,7 +74,7 @@
             <div class="col-md-4">
                 <div class="product-item">
                     <div class="product-thumb">
-                        <img class="img-responsive" src="{{ asset($product->photo ? $product->photo : '/template/images/shop/products/product-1.jpg') }}" alt="product-img" />
+                        <img class="img-responsive" src="{{ asset($product->photo ? $product->photo : '/template/images/shop/products/product-1.jpg') }}" alt="product-img" style="height:400px;" />
                     </div>
                     <div class="product-content">
                         <h4><a href="{{route('product',$product->id)}}">{{$product->name}}</a></h4>
