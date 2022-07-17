@@ -18,7 +18,7 @@ class CategoryController extends Controller
 
     public function create(){
         return view('admin.categories.create',[
-            'title'=>'Thêm danh mục mới',
+            'title'=>'Add new Category',
             'categories'=> $this->categoryService->getParent(),
         ]);
     }
@@ -29,7 +29,7 @@ class CategoryController extends Controller
     }
     public function index(){
         return view('admin.categories.index',[
-            'title'=>'Danh sách danh mục mới',
+            'title'=>'Category List',
             'categories'=>$this->categoryService->getAll(),
         ]);
     }
@@ -37,7 +37,7 @@ class CategoryController extends Controller
     public function edit($id){
         $category = $this->categoryService->getById($id);
         return view('admin.categories.edit',[
-            'title'=>'Chỉnh sửa danh mục: '.$category->name,
+            'title'=>'Edit Category: '.$category->name,
             'category'=>$category,
             'categories_parent'=>$this->categoryService->getParent(),
         ]);
@@ -53,9 +53,9 @@ class CategoryController extends Controller
         $result = $this->categoryService->destroy($request);
         if ($result){
             return redirect(route('admin.categories.index'))
-                ->with('success', __('Xóa thành công!'));
+                ->with('success', __('Success!'));
         }
         return redirect(route('admin.categories.index'))
-            ->with('error', __('xóa không thành công!'));
+            ->with('error', __('Failed!'));
     }
 }

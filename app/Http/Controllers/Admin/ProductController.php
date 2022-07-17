@@ -25,7 +25,7 @@ class ProductController extends Controller
     public function index()
     {
         return view('admin.products.index', [
-            'title'=>'Danh sách sản phẩm',
+            'title'=>'Product List',
             'products'=>$this->productService->get(),
         ]);
     }
@@ -38,7 +38,7 @@ class ProductController extends Controller
         $generator = new Picqer\Barcode\BarcodeGeneratorHTML();
         $barcode = $generator->getBarcode($product_code,$generator::TYPE_CODE_128);
         return view('admin.products.create',[
-            'title'=>'Thêm sản phẩm mới',
+            'title'=>'Add new Product',
             'categories'=>$categories,
             'product_code'=>$product_code,
             'barcode'=>$barcode,
@@ -60,7 +60,7 @@ class ProductController extends Controller
         $product = $this->productService->getById($id);
         $users = User::orderBy('id')->get();
         return view('admin.products.edit',[
-            'title'=>'Chỉnh sửa sản phẩm: ' . $product->name,
+            'title'=>'Edit Product: ' . $product->name,
             'categories'=>$categories,
             'product'=>$product,
             'brands'=>$brands,

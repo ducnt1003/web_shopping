@@ -51,7 +51,7 @@
                             <!-- jquery validation -->
                             <div class="card card-primary mt-3">
                                 <div class="card-header">
-                                    <h3 class="card-title">Doanh thu 12 tháng qua</h3>
+                                    <h3 class="card-title">Revenue for the last 12 months</h3>
                                 </div>
                                 <div>
                                     <canvas id="myChart1"></canvas>
@@ -63,7 +63,7 @@
                         <div class="col-md-6">
                             <div class="card card-primary mt-3">
                                 <div class="card-header">
-                                    <h3 class="card-title">5 sản phẩm bán chạy nhất tháng
+                                    <h3 class="card-title">Top 5 best selling products of the month
                                         <select class="form-select" aria-label="Default select example" id="select_month">
                                             @foreach ($select_months as $month)
                                             <option value={{$month}}> {{$month }}</option>
@@ -80,7 +80,7 @@
                         <div class="col-md-6">
                             <div class="card card-primary mt-3">
                                 <div class="card-header">
-                                    <h3 class="card-title">5 sản phẩm bán chạy nhất năm
+                                    <h3 class="card-title">Top 5 best selling products of the year
                                         <select class="form-select" aria-label="Default select example" id="select_year">
                                             @foreach ($select_years as $i)
                                             <option value={{$i}}> {{$i }}</option>
@@ -184,7 +184,7 @@
             const data1 = {
                 labels: labels1,
                 datasets: [{
-                    label: 'Doanh thu 12 tháng vừa qua',
+                    label: 'Revenue for the last 12 months',
                     backgroundColor: 'rgb(255, 99, 132)',
                     borderColor: 'rgb(255, 99, 132)',
                     data: money,

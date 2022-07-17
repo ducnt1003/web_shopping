@@ -7,11 +7,11 @@
         <thead>
         <tr>
             <td>ID</td>
-            <td>Tên sản phẩm</td>
-            <td>Danh mục</td>
-            <td>Mô tả</td>
-            <td>Giá</td>
-            <td>Màu sắc</td>
+            <td>Name</td>
+            <td>Category</td>
+            <td>Description</td>
+            <td>Price</td>
+            <td>Color</td>
 {{--            <td>Nhãn hiệu</td>--}}
 {{--            <td>Nhân viên tạo</td>--}}
             <td>Active</td>
@@ -70,15 +70,16 @@
                     @method('DELETE')
                     <input type="hidden" name="product_id" id="product_id" value="0">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="deleteModalLabel">Xóa product!</h5>
+                        <h5 class="modal-title" id="deleteModalLabel">Delete product!</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="border: 0px"><i class="fas fa-times"></i></button>
                     </div>
                     <div class="modal-body">
-                        Bạn có muốn xóa product này?
+                        Are you sure to delete this product?
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">đóng</button>
-                        <button type="submit" class="btn btn-danger">xóa</button>
+                        
+                        <button type="submit" class="btn btn-danger">Delete</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                     </div>
                 </form>
             </div>
@@ -88,7 +89,7 @@
 
 
 @section('js') 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script type="text/javascript" src="https://cdn.datatables.net/1.11.2/js/jquery.dataTables.min.js"></script>
 

@@ -6,32 +6,32 @@
     <form action="" method="post">
         <div class="card-body">
             <div class="form-group">
-                <label >Tên Danh Mục</label>
-                <input type="text" name="name" value="{{old('name')}}" class="form-control" placeholder="Nhập tên danh mục">
+                <label >Name</label>
+                <input type="text" name="name" value="{{old('name')}}" class="form-control" placeholder="Category Name">
             </div>
             <div class="form-group">
-                <label>Danh Mục</label>
+                <label>Category</label>
                 <select class="form-control" name="parent_id">
-                    <option value="0">Danh mục cha</option>
+                    <option value="0">Parrent Category</option>
                     @foreach($categories as $category)
                         <option value={{$category->id}}>{{$category->name}}</option>
                     @endforeach
                 </select>
             </div>
             <div class="form-group">
-                <label>Mô tả danh mục</label>
+                <label>Description</label>
                 <textarea name="description" value="{{old('description')}}" class="form-control"></textarea>
             </div>
             <div class="row">
                 <div class="col-md-6">
                     <div class="form-group">
-                        <label>Thuế</label>
+                        <label>Tax</label>
                         <input type="number" name="tax" value="{{old('tax')}}" class="form-control">
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="form-group">
-                        <label>Đơn vị</label>
+                        <label>Unit</label>
                         <input type="text" name="unit" value="{{old('text')}}" class="form-control">
                     </div>
                 </div>
@@ -45,7 +45,7 @@
         </div>
 
         <div class="card-footer">
-            <button type="submit" class="btn btn-primary">Tạo Danh Mục</button>
+            <button type="submit" class="btn btn-primary">Create</button>
         </div>
         @csrf
     </form>

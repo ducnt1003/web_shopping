@@ -35,12 +35,12 @@
                     @include('cart')
                     
                     <!-- Languages -->
-                    <li class="commonSelect">
+                    {{-- <li class="commonSelect">
                         <select class="form-control">
                             <option>EN</option>
                             <option>VI</option>
                         </select>
-                    </li><!-- / Languages -->
+                    </li><!-- / Languages --> --}}
                     @if(Auth::User())
                     <?php $customer = \App\Models\Customer::where('id',Auth::user()->id )->first()?>
                 

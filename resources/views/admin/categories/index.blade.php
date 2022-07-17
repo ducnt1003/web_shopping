@@ -34,15 +34,16 @@
                     @method('DELETE')
                     <input type="hidden" name="category_id" id="category_id" value="0">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="deleteModalLabel">Xóa category!</h5>
+                        <h5 class="modal-title" id="deleteModalLabel">Delete category!</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="border: 0px"><i class="fas fa-times"></i></button>
                     </div>
                     <div class="modal-body">
-                        Bạn có muốn xóa category này?
+                        Are you sure to delete this category?
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">đóng</button>
-                        <button type="submit" class="btn btn-danger">xóa</button>
+                        
+                        <button type="submit" class="btn btn-danger">Delete</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                     </div>
                 </form>
             </div>

@@ -49,7 +49,7 @@
                     <a href="#" class="nav-link">
                         <i class="fab fa-product-hunt" style="margin-left:4px"></i>
                         <p style="margin-left:5px">
-                            Danh mục
+                            Category
                             <i class="right fas fa-angle-left"></i>
                         </p>
                     </a>
@@ -57,13 +57,13 @@
                         <li class="nav-item">
                             <a href="{{route('admin.categories.create')}}" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
-                                <p>Thêm danh mục</p>
+                                <p>Add new Category</p>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a href="{{route('admin.categories.index')}}" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
-                                <p>Danh sách danh mục</p>
+                                <p>Category List</p>
                             </a>
                         </li>
                     </ul>
@@ -73,7 +73,7 @@
                     <a href="#" class="nav-link">
                         <i class="nav-icon fas fa-store"></i>
                         <p>
-                            Sản phẩm
+                            Product
                             <i class="right fas fa-angle-left"></i>
                         </p>
                     </a>
@@ -81,13 +81,13 @@
                         <li class="nav-item">
                             <a href="{{route('admin.products.create')}}" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
-                                <p>Thêm sản phẩm</p>
+                                <p>Add new Product</p>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a href="{{route('admin.products.index')}}" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
-                                <p>Danh sách sản phẩm</p>
+                                <p>Product List</p>
                             </a>
                         </li>
                     </ul>
@@ -296,7 +296,7 @@
                     <a href="#" class="nav-link">
                         <i class="fas fa-cart-plus"></i>
                         <p style="margin-left: 10px">
-                            Giỏ hàng
+                            Cart
                             <i class="right fas fa-angle-left"></i>
                         </p>
                     </a>
@@ -304,7 +304,7 @@
                         <li class="nav-item">
                             <a href="{{route('admin.cart-list')}}" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
-                                <p>Danh sách đơn hàng</p>
+                                <p>Cart List</p>
                             </a>
                         </li>
                     </ul>

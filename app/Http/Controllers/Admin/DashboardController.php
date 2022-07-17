@@ -33,7 +33,7 @@ class DashboardController extends Controller
         $select_years = $this->select_year();
         return view(
             'admin.dashboard',
-            ['title' => 'Doanh thu 12 tháng qua'],
+            ['title' => 'Revenue for the last 12 months'],
             compact('sales', 'select_years','select_months','current_month','year')
         );
     }
@@ -74,7 +74,7 @@ class DashboardController extends Controller
                 "data" :{
                     "labels" : ['.$label_chart.'],
                     "datasets" : [{
-                        "label" : "Da ban trong thang",
+                        "label" : "Sold in month",
                         "backgroundColor" : "rgb(255, 128, 128)",
                         "data" : ['.$data_chart.']
                     }]
@@ -119,7 +119,7 @@ class DashboardController extends Controller
                 "data" :{
                     "labels" : ['.$label_chart.'],
                     "datasets" : [{
-                        "label" : "da ban trong nam",
+                        "label" : "Sold in year",
                         "backgroundColor" : "rgb(255, 128, 128)",
                         "data" : ['.$data_chart.']
                     }]
