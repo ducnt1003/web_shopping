@@ -17,7 +17,7 @@ class ProductSeeder extends Seeder
     {
         DB::table('products')->truncate();
         Product::create([
-            'name' => 'T-shirt 01',
+            'name' => 'Short',
             'price' => '30',
             'description' => 'Beutiful shirt',
             'category_id' => '1',
@@ -32,10 +32,10 @@ class ProductSeeder extends Seeder
             'updated_at' => new \dateTime,
         ]);
         Product::create([
-            'name' => 'T-shirt 02',
+            'name' => 'Jogger 01',
             'price' => '30',
             'description' => 'Beutiful shirt',
-            'category_id' => '1',
+            'category_id' => '2',
             'created_by' => '1',
             'brand_id' => '1',
             'active' => '1',
@@ -47,10 +47,10 @@ class ProductSeeder extends Seeder
             'updated_at' => new \dateTime,
         ]);
         Product::create([
-            'name' => 'T-shirt 03',
+            'name' => 'Jogger 02',
             'price' => '30',
             'description' => 'Beutiful shirt',
-            'category_id' => '1',
+            'category_id' => '2',
             'created_by' => '1',
             'brand_id' => '1',
             'active' => '1',
@@ -62,10 +62,10 @@ class ProductSeeder extends Seeder
             'updated_at' => new \dateTime,
         ]);
         Product::create([
-            'name' => 'T-shirt 04',
+            'name' => 'Short 04',
             'price' => '30',
             'description' => 'Beutiful shirt',
-            'category_id' => '1',
+            'category_id' => '4',
             'created_by' => '1',
             'brand_id' => '1',
             'active' => '1',
@@ -77,10 +77,10 @@ class ProductSeeder extends Seeder
             'updated_at' => new \dateTime,
         ]);
         Product::create([
-            'name' => 'T-shirt 05',
+            'name' => 'T-shirt 01',
             'price' => '30',
             'description' => 'Beutiful shirt',
-            'category_id' => '1',
+            'category_id' => '5',
             'created_by' => '1',
             'brand_id' => '1',
             'active' => '1',
@@ -92,10 +92,10 @@ class ProductSeeder extends Seeder
             'updated_at' => new \dateTime,
         ]);
         Product::create([
-            'name' => 'T-shirt 06',
+            'name' => 'Sweater 1',
             'price' => '30',
             'description' => 'Beutiful shirt',
-            'category_id' => '1',
+            'category_id' => '2',
             'created_by' => '1',
             'brand_id' => '1',
             'active' => '1',
@@ -107,10 +107,10 @@ class ProductSeeder extends Seeder
             'updated_at' => new \dateTime,
         ]);
         Product::create([
-            'name' => 'T-shirt 07',
+            'name' => 'Sweater 2',
             'price' => '30',
             'description' => 'Beutiful shirt',
-            'category_id' => '1',
+            'category_id' => '2',
             'created_by' => '1',
             'brand_id' => '1',
             'active' => '1',
@@ -122,10 +122,10 @@ class ProductSeeder extends Seeder
             'updated_at' => new \dateTime,
         ]);
         Product::create([
-            'name' => 'T-shirt 08',
+            'name' => 'Hoodie',
             'price' => '30',
             'description' => 'Beutiful shirt',
-            'category_id' => '1',
+            'category_id' => '7',
             'created_by' => '1',
             'brand_id' => '1',
             'active' => '1',
@@ -137,10 +137,10 @@ class ProductSeeder extends Seeder
             'updated_at' => new \dateTime,
         ]);
         Product::create([
-            'name' => 'T-shirt 09',
+            'name' => 'Hoodie white',
             'price' => '30',
             'description' => 'Beutiful shirt',
-            'category_id' => '1',
+            'category_id' => '7',
             'created_by' => '1',
             'brand_id' => '1',
             'active' => '1',
@@ -152,10 +152,10 @@ class ProductSeeder extends Seeder
             'updated_at' => new \dateTime,
         ]);
         Product::create([
-            'name' => 'T-shirt 10',
+            'name' => 'Leather Wallet',
             'price' => '30',
             'description' => 'Beutiful shirt',
-            'category_id' => '1',
+            'category_id' => '3',
             'created_by' => '1',
             'brand_id' => '1',
             'active' => '1',
@@ -163,6 +163,21 @@ class ProductSeeder extends Seeder
             'photo1' => 'https://cdn.chiaki.vn/unsafe/0x900/left/top/smart/filters:quality(90)/https://chiaki.vn/upload/product/2021/12/vi-nu-cam-tay-dang-dai-taomicmic-vd245-61a741d4dee69-01122021163516.jpg',
             'photo2' => 'https://cdn.chiaki.vn/unsafe/0x900/left/top/smart/filters:quality(90)/https://chiaki.vn/upload/product/2021/12/vi-nu-cam-tay-dang-dai-taomicmic-vd245-61ad8a0a4aa97-06122021105658.png',
             'photo3' => 'https://cdn.chiaki.vn/unsafe/0x900/left/top/smart/filters:quality(90)/https://chiaki.vn/upload/product/2021/12/vi-nu-cam-tay-dang-dai-taomicmic-vd245-61a741d531b3d-01122021163517.jpgg',
+            'created_at' => new \dateTime,
+            'updated_at' => new \dateTime,
+        ]);
+        Product::create([
+            'name' => 'Super Star',
+            'price' => '30',
+            'description' => 'Beutiful shirt',
+            'category_id' => '6',
+            'created_by' => '1',
+            'brand_id' => '1',
+            'active' => '1',
+            'photo' => 'https://giayxshop.vn/wp-content/uploads/2019/10/MG_8178.jpg',
+            'photo1' => 'https://giayxshop.vn/wp-content/uploads/2019/10/MG_8181-150x150.jpg',
+            'photo2' => 'https://giayxshop.vn/wp-content/uploads/2019/10/MG_8180-150x150.jpg',
+            'photo3' => 'https://giayxshop.vn/wp-content/uploads/2019/10/MG_8183-150x150.jpg',
             'created_at' => new \dateTime,
             'updated_at' => new \dateTime,
         ]);

@@ -15,7 +15,7 @@
                 @endphp
             <div class="media">
             <a class="pull-left" href="{{route('product',$product->id)}}">
-                <img class="media-object" src="{{$product->photo}}" alt="{{$product->name}}" />
+                <img class="media-object" src="{{$product->photo}}" alt="{{$product->name}}" style="width:30px;"/>
             </a>
             <div class="media-body">
                 <h4 class="media-heading"><a href="{{route('product',$product->id)}}">{{$product->name}}</a></h4>
