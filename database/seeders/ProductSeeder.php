@@ -33,7 +33,7 @@ class ProductSeeder extends Seeder
         ]);
         Product::create([
             'name' => 'Jogger 01',
-            'price' => '30',
+            'price' => '40',
             'description' => 'Beutiful shirt',
             'category_id' => '2',
             'created_by' => '1',
@@ -48,7 +48,7 @@ class ProductSeeder extends Seeder
         ]);
         Product::create([
             'name' => 'Jogger 02',
-            'price' => '30',
+            'price' => '32',
             'description' => 'Beutiful shirt',
             'category_id' => '2',
             'created_by' => '1',
@@ -63,7 +63,7 @@ class ProductSeeder extends Seeder
         ]);
         Product::create([
             'name' => 'Short 04',
-            'price' => '30',
+            'price' => '45',
             'description' => 'Beutiful shirt',
             'category_id' => '4',
             'created_by' => '1',
@@ -78,7 +78,7 @@ class ProductSeeder extends Seeder
         ]);
         Product::create([
             'name' => 'T-shirt 01',
-            'price' => '30',
+            'price' => '55',
             'description' => 'Beutiful shirt',
             'category_id' => '5',
             'created_by' => '1',
@@ -93,7 +93,7 @@ class ProductSeeder extends Seeder
         ]);
         Product::create([
             'name' => 'Sweater 1',
-            'price' => '30',
+            'price' => '60',
             'description' => 'Beutiful shirt',
             'category_id' => '2',
             'created_by' => '1',
@@ -108,7 +108,7 @@ class ProductSeeder extends Seeder
         ]);
         Product::create([
             'name' => 'Sweater 2',
-            'price' => '30',
+            'price' => '20',
             'description' => 'Beutiful shirt',
             'category_id' => '2',
             'created_by' => '1',
@@ -123,7 +123,7 @@ class ProductSeeder extends Seeder
         ]);
         Product::create([
             'name' => 'Hoodie',
-            'price' => '30',
+            'price' => '28',
             'description' => 'Beutiful shirt',
             'category_id' => '7',
             'created_by' => '1',
@@ -153,7 +153,7 @@ class ProductSeeder extends Seeder
         ]);
         Product::create([
             'name' => 'Leather Wallet',
-            'price' => '30',
+            'price' => '32',
             'description' => 'Beutiful shirt',
             'category_id' => '3',
             'created_by' => '1',
@@ -168,7 +168,7 @@ class ProductSeeder extends Seeder
         ]);
         Product::create([
             'name' => 'Super Star',
-            'price' => '30',
+            'price' => '57',
             'description' => 'Beutiful shirt',
             'category_id' => '6',
             'created_by' => '1',
